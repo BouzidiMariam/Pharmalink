@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Events | Pharma Link</title><meta name="description" content="Pharma Link — AI infrastructure for the pharmaceutical ecosystem. Tunisian HealthTech startup."><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="css/style.css"></head><body data-p="events.html">
+<section><h2>Events, awards & speaking — 2026</h2><p style="color:var(--mute)">Each event has an image slot: add <code>assets/images/event-N.jpg</code> (N = card number from top).</p><div class="tl" id="tl"></div></section>
+<script>
+const E=[["May 1–2","Forum de l’Officine — Tunis","Panel Speaker: Agentic AI in Pharmacy · Top 5 HealthTech Startup","Panel on agentic AI transforming pharmacy operations; recognized among the Top 5 HealthTech startups.","Done"],
+["May 5–6","Healthcare IT Forum — Tunis","Panel Speaker: Cybersecurity in HealthTech · Express FM interview","Data protection, digital trust and secure infrastructure in HealthTech; interview with Express FM.","Done"],
+["July 17–19","Automate or Die Hackathon — SESAME University","Speaker & Mentor","Shared entrepreneurial and HealthTech perspectives and supported participants.","Done"],
+["July 21","Tunisia Global Forum & ATUGE AI Business and Startups Awards — Tunis","Early Stage Award Laureate","Pharma Link recognized in the Early Stage category for AI-driven pharmaceutical innovation.","Award"],
+["July 29","Diaspora Summer Night — Mövenpick Gammarth","ATUGE Awards Recognition","Recognized as an Early Stage laureate in Tunisia’s startup ecosystem.","Award"],
+["Sep 29 – Oct 1","TeleHealthConnect 2026 — Tunis","HealthTech Innovation & AI Film Initiative","AI-driven film on pharmacists’ daily challenges and how intelligent technology can help.","Done"],
+["Oct 13–14","BIGTECH AFRICA 2026 — Cité de la Culture, Tunis","Technology, Digital Transformation & African Innovation","Connecting HealthTech entrepreneurship with African digital transformation. (Confirm participation status before publishing.)","To confirm"],
+["Oct 16–17","20th ATEP Congress — Mahdia Palace","Workshop: A HealthTech Startup Delivering Innovative Solutions for Community Pharmacies","The intelligent pharmacy: AI-assisted workflows, operational intelligence and digital solutions for pharmacists.","Upcoming"]];
+document.getElementById('tl').innerHTML=E.map((e,i)=>`<div class="card"><span class="tag ${e[4]=='Upcoming'?'up':e[4]=='To confirm'?'tbc':''}">${e[4]}</span> <small>${e[0]}, 2026</small><h3>${e[1]}</h3><p><b>${e[2]}</b></p><p>${e[3]}</p><div class="media" data-img="assets/images/event-${i+1}.jpg" data-label="Photo — ${e[1].split(' —')[0]}"></div></div>`).join('');
+</script>
+<section class="alt"><div><h2>Video highlights</h2><div class="grid"><div class="media" data-embed="" data-label="YouTube video 1 (paste embed URL)"></div><div class="media" data-video="assets/videos/express-fm.mp4" data-label="Express FM interview"></div></div></div></section>
+<script src="js/site.js"></script></body></html>
